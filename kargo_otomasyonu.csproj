@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{348B1579-E8AA-4844-B91D-AE974C293BFF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kargo_otomasyonu</RootNamespace>
+    <AssemblyName>kargo_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconfinder_truck_2714747.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fonksiyonlar.cs" />
+    <Compile Include="frm_araclar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_araclar.Designer.cs">
+      <DependentUpon>frm_araclar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_araclarayukle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_araclarayukle.Designer.cs">
+      <DependentUpon>frm_araclarayukle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_duyurular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_duyurular.Designer.cs">
+      <DependentUpon>frm_duyurular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_giris.Designer.cs">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kargoduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kargoduzenle.Designer.cs">
+      <DependentUpon>frm_kargoduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_soforpaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_soforpaneli.Designer.cs">
+      <DependentUpon>frm_soforpaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_subecalisanipanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_subecalisanipanel.Designer.cs">
+      <DependentUpon>frm_subecalisanipanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_subecalisanları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_subecalisanları.Designer.cs">
+      <DependentUpon>frm_subecalisanları.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_subeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_subeler.Designer.cs">
+      <DependentUpon>frm_subeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yoneticiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yoneticiler.Designer.cs">
+      <DependentUpon>frm_yoneticiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_yoneticipanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_yoneticipanel.Designer.cs">
+      <DependentUpon>frm_yoneticipanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_araclar.resx">
+      <DependentUpon>frm_araclar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_araclarayukle.resx">
+      <DependentUpon>frm_araclarayukle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_duyurular.resx">
+      <DependentUpon>frm_duyurular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_giris.resx">
+      <DependentUpon>frm_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kargoduzenle.resx">
+      <DependentUpon>frm_kargoduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_soforpaneli.resx">
+      <DependentUpon>frm_soforpaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_subecalisanipanel.resx">
+      <DependentUpon>frm_subecalisanipanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_subecalisanları.resx">
+      <DependentUpon>frm_subecalisanları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_subeler.resx">
+      <DependentUpon>frm_subeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yoneticiler.resx">
+      <DependentUpon>frm_yoneticiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_yoneticipanel.resx">
+      <DependentUpon>frm_yoneticipanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconfinder_truck_2714747.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
